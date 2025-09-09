@@ -23,10 +23,6 @@ docker push rmarianna/todoapp:1.0.0
 
 ## Run the container
 ```
-docker run --name todoapp -d -p 8080:8080 todoapp:1.0.0
-```
-or run from *Docker Hub*
-```
 docker run --name todoapp -d -p 8080:8080 rmarianna/todoapp:1.0.0
 ```
 
