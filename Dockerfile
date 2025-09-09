@@ -15,8 +15,8 @@ WORKDIR /app
 COPY --from=build /app .
 
 RUN pip install --upgrade pip && \
-pip install -r requirements.txt 
-
+pip install --no-cache-dir -r requirements.txt
+RUN chmod +x manage.py
 RUN python manage.py migrate
 
 EXPOSE 8080
